@@ -1,0 +1,27 @@
+{
+  "name": "aptos-jsonrpc-worker",
+  "version": "0.0.1",
+  "author": "Y",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230518.0",
+    "@types/json-bigint": "^1.0.1",
+    "@types/lodash": "^4.14.195",
+    "@types/node": "^20.2.5",
+    "aptos": "^1.10.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.1",
+    "wrangler": "3.0.0"
+  },
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\"",
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "json-bigint": "^1.0.0",
+    "lodash": "^4.17.21"
+  }
+}
